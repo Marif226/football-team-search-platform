@@ -1,0 +1,24 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: API Server for Football Team Search Platform
+  title: Football Team Search Platform API
+  version: "1.0"
+paths:
+  /user:
+    get:
+      consumes:
+      - application/json
+      description: get user info
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "404":
+          description: Not Found
+      summary: Get user
+      tags:
+      - users
+swagger: "2.0"
